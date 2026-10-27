@@ -41,3 +41,6 @@
 #     True
 
 # Решение
+tovar1=float(input("Цена первого товара, руб.:"))
+tovar2=float(input("Цена первого товара, руб.:"))
+print((tovar1>1000 and tovar2<=1000) or (tovar2>1000 and tovar1<=1000))

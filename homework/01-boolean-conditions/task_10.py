@@ -49,3 +49,10 @@
 #     Допущен: False
 
 # Решение
+pos=float(input("Посещаемость, %: "))
+sdanw=int(input("Сдано лабораторных: "))
+dolg=float(input("Долг по оплате, руб.:"))
+print("Посещаемость: " , pos >= 75)
+print("Лабораторные: " , sdanw >= 8)
+print("Нет долга: " , dolg==0)
+print("Допущен: " , pos >= 75 and sdanw >= 8 and dolg==0)

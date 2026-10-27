@@ -44,3 +44,8 @@
 #     Позвонить покупателю: False
 
 # Решение
+oplat = input("Заказ оплачен (да/нет): ")
+have = input("Товар есть (да/нет): ")
+adresdone = input("Адрес указан (да/нет): ")
+print("Можно отправлять:" , oplat=="да" and have=="да" and adresdone=="да")
+print("Позвонить покупателю:" , oplat=="да" and adresdone=="нет")

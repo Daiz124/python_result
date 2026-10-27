@@ -39,3 +39,7 @@
 #     False
 
 # Решение
+ostatok = int(input("Остаток на складе, шт.:"))
+price = float(input("Цена товара, руб.:"))
+summphave = float(input("Деньги у покупателя, руб.:"))
+print(ostatok>0 and summphave>=price)
