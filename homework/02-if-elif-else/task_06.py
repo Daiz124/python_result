@@ -43,3 +43,13 @@
 #     Кешбэк: 0.00 руб.
 
 # Решение
+kateg = input("Категория: ")
+summp = float(input("Сумма покупки, руб.: "))
+if kateg == "азс":
+    print(f"Кешбэк: {summp*5/100:.2f} руб.")
+elif kateg == "аптека":
+    print(f"Кешбэк: {summp*3/100:.2f} руб.")
+elif kateg == "супермаркет":
+    print(f"Кешбэк: {summp*1/100:.2f} руб.")
+else:
+    print(f"Кешбэк: {summp*0/100:.2f} руб.")

@@ -37,9 +37,9 @@
 # Решение: исправьте программу ниже
 password = input("Пароль: ")
 length = len(password)
-if length >= 8:
+if 8 <= length <= 12:
     print("Средний пароль")
-if length >= 12:
+elif length >= 12:
     print("Надёжный пароль")
 else:
     print("Слабый пароль")

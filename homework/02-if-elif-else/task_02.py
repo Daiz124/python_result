@@ -58,3 +58,15 @@
 #     Нужно сдать в багаж
 
 # Решение
+dlina=int(input(""))
+shiri=int(input(""))
+high=int(input(""))
+ves=float(input(""))
+print("Длина, см: " , dlina)
+print("Ширина, см: " , shiri)
+print("Высота, см: " , high)
+print("Вес, кг: " , ves)
+if dlina <= 55 and shiri <= 40 and high <= 20 and ves <= 10:
+    print("Можно взять в салон")
+else:
+    print("Нужно сдать в багаж")

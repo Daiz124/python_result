@@ -47,3 +47,16 @@
 #     Отпуск согласован
 
 # Решение
+otrab=int(input("Отработано месяцев: "))
+want=int(input("Дней отпуска: "))
+dostup=round((otrab*28)//12)
+nehvat=want-dostup
+if otrab<6:
+    print("Отпуск пока недоступен")
+else:
+    if want==dostup:
+        print(f"Доступно дней: {dostup}")
+        print("Отпуск согласован")
+    else:
+        print(f"Доступно дней: {dostup}")
+        print(f"Не хватает дней: {nehvat}")

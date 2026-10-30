@@ -50,3 +50,14 @@
 #     Треугольник не существует
 
 # Решение
+a=int(input("Сторона a: "))
+b=int(input("Сторона b: "))
+c=int(input("Сторона c: "))
+if (a > (c+b)) or (c > (a+b)) or (b > (c+a)):
+    print("Треугольник не существует")
+elif a == b == c:
+    print("Равносторонний")
+elif (a==b and a!=c) or (a==c and a!=b) or (b==c and b!=a):
+    print("Равнобедренный")
+elif a != b != c:
+    print("Разносторонний")

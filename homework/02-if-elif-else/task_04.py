@@ -51,3 +51,15 @@
 #     Опоздание на 3 ч
 
 # Решение
+nint=int(input("Начало интервала, ч: "))
+kint=int(input("Конец интервала, ч: "))
+hour=int(input("Курьер приехал, ч: "))
+print("Начало интервала, ч: " , nint)
+print("Конец интервала, ч: " , kint)
+print("Курьер приехал, ч: " , hour)
+if nint <= hour <= kint:
+    print("Вовремя")
+elif hour < nint:
+    print("Раньше интервала")
+else:
+    print(f"Опоздание на {hour - kint} ч")
