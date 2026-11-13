@@ -35,3 +35,10 @@
 #     Всего шагов: 12000
 
 # Решение
+c=0
+while True:
+    shag=int(input("Шаги за день (0 — конец): "))
+    if shag==0:
+        break
+    c+=shag
+print(f"Всего шагов: {c}")

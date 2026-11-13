@@ -35,3 +35,14 @@
 #     Доступ разрешён
 
 # Решение
+c=0
+while True:
+    pincode=int(input("PIN-код: "))
+    if pincode!=4821:
+            c+=1
+    if c==3 or pincode==4821:
+        break
+if c==3:
+     print("Карта заблокирована")
+else:
+     print("Доступ разрешён")

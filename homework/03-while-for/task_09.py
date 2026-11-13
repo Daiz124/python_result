@@ -54,3 +54,6 @@
 #     -2 x 10 = -20
 
 # Решение
+n=int(input("Число: "))
+for number in range(1, 11):
+    print(n, "x", number, "=", n*number )

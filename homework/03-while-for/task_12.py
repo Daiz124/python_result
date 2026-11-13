@@ -28,3 +28,11 @@
 #     Слов: 0
 
 # Решение
+fraza=input("Фраза: ")
+c=0
+for simvol in fraza:
+    if simvol == " ":
+        c+=1
+if fraza!="":
+    c+=1
+print(f"Слов: {c}")

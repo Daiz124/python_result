@@ -47,3 +47,15 @@
 #     Среднее: 7.00
 
 # Решение
+n=int(input("Число показаний: "))
+minn=100000
+c=0
+summ=0
+for i in range(n):
+    pokaz=int(input("Показание, °C: "))
+    c+=1
+    summ+=pokaz
+    if pokaz < minn:
+        minn = pokaz
+print(f"Минимум: {minn}")
+print(f"Среднее: {summ/c:.2f}")

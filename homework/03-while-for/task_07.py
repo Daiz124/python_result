@@ -42,9 +42,11 @@
 # Решение: исправьте программу ниже
 total = 0
 count = 0
-number = int(input("Число (0 — конец): "))
-while number != 0
+while True:
+    number = int(input("Число (0 — конец): "))
+    if number==0:
+        break
     total += number
-    count =+ 1
+    count += 1
 print("Сумма:", total)
 print("Количество:", count)

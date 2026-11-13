@@ -27,8 +27,8 @@
 #     Сумма квадратов: 385
 
 # Решение: исправьте программу ниже
-n = input("Число n: ")
-for number in range(1, n):
-    total = 0
+n = int(input("Число n: "))
+total = 0
+for number in range(1, n+1):
     total += number * number
 print("Сумма квадратов:", total)

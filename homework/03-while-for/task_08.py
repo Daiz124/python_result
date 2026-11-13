@@ -48,3 +48,17 @@
 #     Попытки закончились
 
 # Решение
+c=0
+while True:
+    guess=int(input("Ваша догадка: "))
+    c+=1
+    if guess==37:
+        print(f"Угадано с попытки {c}")
+        break
+    if guess > 37:
+            print("Меньше")
+    else:
+         print("Больше")
+    if c==5:
+         print("Попытки закончились")
+         break

@@ -46,3 +46,15 @@
 #     Средний балл: 4.50
 
 # Решение
+c=0
+summ=0
+while True:
+    grade=int(input("Оценка (0 — конец): "))
+    if grade==0:
+        break
+    c+=1
+    summ+=grade
+if c==0:
+    print("Оценок нет")
+else:
+    print(f"Средний балл: {summ/c:.2f}")

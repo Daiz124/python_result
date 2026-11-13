@@ -27,3 +27,11 @@
 #     Дороже порога: 6
 
 # Решение
+list=[120, 80, 450, 45, 990, 300]
+porog=int(input("Порог цены, руб.: "))
+c=0
+for price in list:
+    if price>porog:
+        c+=1
+print(f"Дороже порога: {c}")
+
