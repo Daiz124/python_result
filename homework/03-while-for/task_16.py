@@ -34,3 +34,12 @@
 #     Не совершенное
 
 # Решение
+n=int(input("Натуральное число: "))
+summ=0
+for i in range(1, n):
+    if n%i==0:
+        summ+=i
+if summ==n:
+    print("Совершенное")
+else:
+    print("Не совершенное")
